@@ -1,0 +1,17 @@
+.pending {
+    color: grey;
+}
+
+.correct{
+    background-color: green;
+    color: white;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}

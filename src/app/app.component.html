@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="columns">
+    <div class="column is-offset-one-quarter is-half">
+      <div class="mt-5  card border-primary p-5">
+        <div class="panel-heading has-background-grey-dark">
+          <h3 class="has-text-warning-light has-text-centered title is-2 ">Typing Challenge</h3>
+        </div>
+        <div class="card-content is-centered">
+          <p class="subtitle has-text-centered">
+           <!-- {{ randomText }} -->
+           <span 
+                [class]="compare(letter, enteredText[i])"
+                *ngFor = "let letter of randomText.split(''); let i = index;"
+           >{{ letter }}</span>
+          </p>
+          <div class="field">
+            <input 
+                  (input)="onInput($event.target.value)"
+                  class="input is-large" 
+                  size="5" 
+                  type="text" 
+                  placeholder="Let's generate some stuff!" />
+          </div>
+        </div>
+        <div *ngIf="randomText === enteredText"
+              class="has-background-success has-text-centered p-2">
+          <h1 class="subtitle has-text-white">
+            Success!
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <router-outlet></router-outlet> -->
+<!-- ({{ letter }}{{enteredText[i]}}) -->

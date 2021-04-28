@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Open+Sans&family=Roboto&display=swap');
+@import "bulma/css/bulma.css";
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(24, 23, 23);
+}
